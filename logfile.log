@@ -1,0 +1,251 @@
+2021-08-04 10:56:35.118  INFO 25724 --- [main] hTransactionManagementPlasmItApplication : Starting AppointmentWithTransactionManagementPlasmItApplication using Java 16.0.1 on LAPTOP-GLU60OEK with PID 25724 (C:\Users\Shayan\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\AppointmentWithTransactionManagementPlasmIT\target\classes started by Shayan in C:\Users\Shayan\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\AppointmentWithTransactionManagementPlasmIT)
+2021-08-04 10:56:35.121  INFO 25724 --- [main] hTransactionManagementPlasmItApplication : No active profile set, falling back to default profiles: default
+2021-08-04 10:56:36.033  INFO 25724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-04 10:56:36.036  INFO 25724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-08-04 10:56:36.065  INFO 25724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JDBC repository interfaces.
+2021-08-04 10:56:36.077  INFO 25724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-04 10:56:36.079  INFO 25724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-04 10:56:36.095  INFO 25724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-08-04 10:56:36.779  INFO 25724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-04 10:56:36.794  INFO 25724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-04 10:56:36.794  INFO 25724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-04 10:56:36.932  INFO 25724 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-04 10:56:36.933  INFO 25724 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1749 ms
+2021-08-04 10:56:36.997 DEBUG 25724 --- [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'filter' configured for use
+2021-08-04 10:56:37.212  INFO 25724 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-04 10:56:37.266  INFO 25724 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-04 10:56:37.435  INFO 25724 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-04 10:56:37.554  INFO 25724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-04 10:56:37.951  INFO 25724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-04 10:56:37.969  INFO 25724 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-08-04 10:56:38.908  INFO 25724 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-04 10:56:38.921  INFO 25724 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 10:56:39.137  WARN 25724 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-04 10:56:39.591  INFO 25724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-04 10:56:39.600  INFO 25724 --- [main] hTransactionManagementPlasmItApplication : Started AppointmentWithTransactionManagementPlasmItApplication in 4.994 seconds (JVM running for 5.556)
+2021-08-04 10:57:45.407  INFO 25724 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-04 10:57:45.407  INFO 25724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-04 10:57:45.409  INFO 25724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-04 10:57:45.508 DEBUG 25724 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /patients/add]
+2021-08-04 10:57:46.187 DEBUG 25724 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 10:57:46.188 DEBUG 25724 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 10:57:46.777  INFO 25724 --- [http-nio-8080-exec-1] c.p.appointment.dao.PatientDAOImpl       : savePatient()<--PatientDAOImpl class executed
+2021-08-04 10:57:46.778  INFO 25724 --- [http-nio-8080-exec-1] c.p.a.service.PatientServiceImpl         : savePatient()<--PatientServiceImpl class executed
+2021-08-04 10:57:46.779 DEBUG 25724 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 10:57:47.911 DEBUG 25724 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : After request [POST /patients/add, payload={
+	 "name": "S pal"
+
+
+}	]
+2021-08-04 10:58:14.971 DEBUG 25724 --- [http-nio-8080-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /patients/add]
+2021-08-04 10:58:14.972 DEBUG 25724 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 10:58:14.972 DEBUG 25724 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 10:58:15.133  INFO 25724 --- [http-nio-8080-exec-3] c.p.appointment.dao.PatientDAOImpl       : savePatient()<--PatientDAOImpl class executed
+2021-08-04 10:58:15.134  INFO 25724 --- [http-nio-8080-exec-3] c.p.a.service.PatientServiceImpl         : savePatient()<--PatientServiceImpl class executed
+2021-08-04 10:58:15.135 DEBUG 25724 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 10:58:15.395 DEBUG 25724 --- [http-nio-8080-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [POST /patients/add, payload={
+	 "name": "P pal"
+
+
+}	]
+2021-08-04 10:58:35.803 DEBUG 25724 --- [http-nio-8080-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /patients/add]
+2021-08-04 10:58:35.805 DEBUG 25724 --- [http-nio-8080-exec-5] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 10:58:35.805 DEBUG 25724 --- [http-nio-8080-exec-5] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 10:58:36.060  INFO 25724 --- [http-nio-8080-exec-5] c.p.appointment.dao.PatientDAOImpl       : savePatient()<--PatientDAOImpl class executed
+2021-08-04 10:58:36.061  INFO 25724 --- [http-nio-8080-exec-5] c.p.a.service.PatientServiceImpl         : savePatient()<--PatientServiceImpl class executed
+2021-08-04 10:58:36.062 DEBUG 25724 --- [http-nio-8080-exec-5] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 10:58:36.285 DEBUG 25724 --- [http-nio-8080-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : After request [POST /patients/add, payload={
+	 "name": "D pal"
+
+
+}	]
+2021-08-04 10:58:47.587 DEBUG 25724 --- [http-nio-8080-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /patients/getall]
+2021-08-04 10:58:47.610 DEBUG 25724 --- [http-nio-8080-exec-7] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 10:58:47.610 DEBUG 25724 --- [http-nio-8080-exec-7] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 10:58:47.922  INFO 25724 --- [http-nio-8080-exec-7] c.p.appointment.dao.PatientDAOImpl       : getAllPatients()<--PatientDAOImpl class executed
+2021-08-04 10:58:47.922  INFO 25724 --- [http-nio-8080-exec-7] c.p.a.service.PatientServiceImpl         : findAllPatients()<--PatientServiceImpl class executed
+2021-08-04 10:58:47.922 DEBUG 25724 --- [http-nio-8080-exec-7] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 10:58:47.928 DEBUG 25724 --- [http-nio-8080-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /patients/getall]
+2021-08-04 10:59:01.254 DEBUG 25724 --- [http-nio-8080-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /patients/getone/145]
+2021-08-04 10:59:01.258 DEBUG 25724 --- [http-nio-8080-exec-9] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 10:59:01.258 DEBUG 25724 --- [http-nio-8080-exec-9] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 10:59:01.310  INFO 25724 --- [http-nio-8080-exec-9] c.p.appointment.dao.PatientDAOImpl       : findPatientsById()<--PatientDAOImpl class executed
+2021-08-04 10:59:01.311  INFO 25724 --- [http-nio-8080-exec-9] c.p.a.service.PatientServiceImpl         : findPatientsById()<--PatientServiceImpl class executed
+2021-08-04 10:59:01.311 DEBUG 25724 --- [http-nio-8080-exec-9] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 10:59:01.313 DEBUG 25724 --- [http-nio-8080-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /patients/getone/145]
+2021-08-04 10:59:54.276 DEBUG 25724 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [DELETE /patients/delete/145]
+2021-08-04 10:59:54.278 DEBUG 25724 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 10:59:54.278 DEBUG 25724 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 10:59:54.460  INFO 25724 --- [http-nio-8080-exec-1] c.p.a.service.PatientServiceImpl         : deletePatientById()<--PatientServiceImpl class executed
+2021-08-04 10:59:54.461 DEBUG 25724 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 10:59:54.706 DEBUG 25724 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : After request [DELETE /patients/delete/145]
+2021-08-04 11:00:02.593 DEBUG 25724 --- [http-nio-8080-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /patients/getall]
+2021-08-04 11:00:02.594 DEBUG 25724 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 11:00:02.594 DEBUG 25724 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 11:00:02.635  INFO 25724 --- [http-nio-8080-exec-3] c.p.appointment.dao.PatientDAOImpl       : getAllPatients()<--PatientDAOImpl class executed
+2021-08-04 11:00:02.635  INFO 25724 --- [http-nio-8080-exec-3] c.p.a.service.PatientServiceImpl         : findAllPatients()<--PatientServiceImpl class executed
+2021-08-04 11:00:02.635 DEBUG 25724 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 11:00:02.637 DEBUG 25724 --- [http-nio-8080-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /patients/getall]
+2021-08-04 11:00:09.091 DEBUG 25724 --- [http-nio-8080-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /patients/getone/145]
+2021-08-04 11:00:09.092 DEBUG 25724 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 11:00:09.092 DEBUG 25724 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 11:00:09.095  INFO 25724 --- [http-nio-8080-exec-4] c.p.appointment.dao.PatientDAOImpl       : findPatientsById()<--PatientDAOImpl class executed
+2021-08-04 11:00:09.095 ERROR 25724 --- [http-nio-8080-exec-4] c.p.a.service.PatientServiceImpl         : Invalid Input:
+2021-08-04 11:00:09.095 DEBUG 25724 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : rolling back
+2021-08-04 11:00:09.152 DEBUG 25724 --- [http-nio-8080-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /patients/getone/145]
+2021-08-04 11:01:59.510 DEBUG 25724 --- [http-nio-8080-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /doctors/add]
+2021-08-04 11:01:59.512 DEBUG 25724 --- [http-nio-8080-exec-6] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 11:01:59.513 DEBUG 25724 --- [http-nio-8080-exec-6] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 11:01:59.716  INFO 25724 --- [http-nio-8080-exec-6] c.p.a.service.DoctorServiceImpl          : saveDoctor()<--DoctorServiceImpl class executed
+2021-08-04 11:01:59.717 DEBUG 25724 --- [http-nio-8080-exec-6] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 11:02:00.084 DEBUG 25724 --- [http-nio-8080-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [POST /doctors/add, payload={
+	"dname":"S Pal"
+}	]
+2021-08-04 11:02:06.982 DEBUG 25724 --- [http-nio-8080-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /doctors/add]
+2021-08-04 11:02:06.983 DEBUG 25724 --- [http-nio-8080-exec-7] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 11:02:06.983 DEBUG 25724 --- [http-nio-8080-exec-7] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 11:02:07.123  INFO 25724 --- [http-nio-8080-exec-7] c.p.a.service.DoctorServiceImpl          : saveDoctor()<--DoctorServiceImpl class executed
+2021-08-04 11:02:07.123 DEBUG 25724 --- [http-nio-8080-exec-7] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 11:02:07.268 DEBUG 25724 --- [http-nio-8080-exec-7] o.s.w.f.CommonsRequestLoggingFilter      : After request [POST /doctors/add, payload={
+	"dname":"P Pal"
+}	]
+2021-08-04 11:02:13.059 DEBUG 25724 --- [http-nio-8080-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /doctors/add]
+2021-08-04 11:02:13.061 DEBUG 25724 --- [http-nio-8080-exec-9] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 11:02:13.061 DEBUG 25724 --- [http-nio-8080-exec-9] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 11:02:13.211  INFO 25724 --- [http-nio-8080-exec-9] c.p.a.service.DoctorServiceImpl          : saveDoctor()<--DoctorServiceImpl class executed
+2021-08-04 11:02:13.212 DEBUG 25724 --- [http-nio-8080-exec-9] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 11:02:13.347 DEBUG 25724 --- [http-nio-8080-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : After request [POST /doctors/add, payload={
+	"dname":"D Pal"
+}	]
+2021-08-04 11:02:20.662 DEBUG 25724 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /doctors/getall]
+2021-08-04 11:02:20.663 DEBUG 25724 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 11:02:20.663 DEBUG 25724 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 11:02:20.667  INFO 25724 --- [http-nio-8080-exec-1] c.plasmit.appointment.dao.DoctorDAOImpl  : getAllDoctors()<--DoctorDAOImpl class executed
+2021-08-04 11:02:20.667  INFO 25724 --- [http-nio-8080-exec-1] c.p.a.service.DoctorServiceImpl          : findAllDoctors()<--DoctorServiceImpl class executed
+2021-08-04 11:02:20.667 DEBUG 25724 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 11:02:20.670 DEBUG 25724 --- [http-nio-8080-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /doctors/getall]
+2021-08-04 11:02:29.038 DEBUG 25724 --- [http-nio-8080-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /doctors/getone/148]
+2021-08-04 11:02:29.039 DEBUG 25724 --- [http-nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 11:02:29.040 DEBUG 25724 --- [http-nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 11:02:29.042  INFO 25724 --- [http-nio-8080-exec-2] c.p.a.service.DoctorServiceImpl          : findDoctorsById()<--DoctorServiceImpl class executed
+2021-08-04 11:02:29.042 DEBUG 25724 --- [http-nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 11:02:29.044 DEBUG 25724 --- [http-nio-8080-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /doctors/getone/148]
+2021-08-04 11:02:44.637 DEBUG 25724 --- [http-nio-8080-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [DELETE /doctors/delete/148]
+2021-08-04 11:02:44.641 DEBUG 25724 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 11:02:44.641 DEBUG 25724 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 11:02:44.644  INFO 25724 --- [http-nio-8080-exec-4] c.p.a.service.DoctorServiceImpl          : findDoctorsById()<--DoctorServiceImpl class executed
+2021-08-04 11:02:44.644 DEBUG 25724 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 11:02:44.645 DEBUG 25724 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 11:02:44.683  INFO 25724 --- [http-nio-8080-exec-4] c.p.a.service.DoctorServiceImpl          : deleteDoctorById()<--DoctorServiceImpl class executed
+2021-08-04 11:02:44.683 DEBUG 25724 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 11:02:44.791 DEBUG 25724 --- [http-nio-8080-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : After request [DELETE /doctors/delete/148]
+2021-08-04 11:02:53.756 DEBUG 25724 --- [http-nio-8080-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /doctors/getone/148]
+2021-08-04 11:02:53.758 DEBUG 25724 --- [http-nio-8080-exec-6] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 11:02:53.758 DEBUG 25724 --- [http-nio-8080-exec-6] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 11:02:53.760 ERROR 25724 --- [http-nio-8080-exec-6] c.p.a.service.DoctorServiceImpl          : Invalid Input:
+2021-08-04 11:02:53.761 DEBUG 25724 --- [http-nio-8080-exec-6] o.h.e.t.internal.TransactionImpl         : rolling back
+2021-08-04 11:02:53.762 ERROR 25724 --- [http-nio-8080-exec-6] c.p.a.controller.DoctorController        : Invalid Input:
+2021-08-04 11:02:53.764 DEBUG 25724 --- [http-nio-8080-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /doctors/getone/148]
+2021-08-04 11:02:59.403 DEBUG 25724 --- [http-nio-8080-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /doctors/getall]
+2021-08-04 11:02:59.404 DEBUG 25724 --- [http-nio-8080-exec-8] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 11:02:59.405 DEBUG 25724 --- [http-nio-8080-exec-8] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 11:02:59.407  INFO 25724 --- [http-nio-8080-exec-8] c.plasmit.appointment.dao.DoctorDAOImpl  : getAllDoctors()<--DoctorDAOImpl class executed
+2021-08-04 11:02:59.407  INFO 25724 --- [http-nio-8080-exec-8] c.p.a.service.DoctorServiceImpl          : findAllDoctors()<--DoctorServiceImpl class executed
+2021-08-04 11:02:59.407 DEBUG 25724 --- [http-nio-8080-exec-8] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 11:02:59.410 DEBUG 25724 --- [http-nio-8080-exec-8] o.s.w.f.CommonsRequestLoggingFilter      : After request [GET /doctors/getall]
+2021-08-04 11:04:17.715 DEBUG 25724 --- [http-nio-8080-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /appointment/add]
+2021-08-04 11:04:17.720 DEBUG 25724 --- [http-nio-8080-exec-10] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 11:04:17.720 DEBUG 25724 --- [http-nio-8080-exec-10] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 11:04:17.932 DEBUG 25724 --- [http-nio-8080-exec-10] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 11:04:18.254 DEBUG 25724 --- [http-nio-8080-exec-10] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 11:04:18.397  INFO 25724 --- [http-nio-8080-exec-10] c.p.a.dao.DoctorScheduleDAOImpl          : saveDoctorSchedule()<--DoctorScheduleDAOImpl class executed
+2021-08-04 11:04:18.398  INFO 25724 --- [http-nio-8080-exec-10] c.p.a.service.DoctorScheduleServiceImpl  : saveDoctorSchedule() executed
+2021-08-04 11:04:18.399 DEBUG 25724 --- [http-nio-8080-exec-10] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 11:04:18.922  INFO 25724 --- [http-nio-8080-exec-10] c.p.a.controller.AppointmentController   : saveAppointment<--AppointmentController class executed
+2021-08-04 11:04:18.926 DEBUG 25724 --- [http-nio-8080-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : After request [POST /appointment/add, payload={
+  "patientAppointment":{
+	"pid":146,
+	"pname":"S pal"
+  },
+    "doctorSchedule":{
+		"did":"144",
+		"dname":"P Pal"
+		
+  }
+
+}	]
+2021-08-04 11:04:49.694 DEBUG 25724 --- [http-nio-8080-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /appointment/add]
+2021-08-04 11:04:49.696 DEBUG 25724 --- [http-nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 11:04:49.696 DEBUG 25724 --- [http-nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 11:04:49.906 DEBUG 25724 --- [http-nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 11:04:50.144 DEBUG 25724 --- [http-nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 11:04:50.331  INFO 25724 --- [http-nio-8080-exec-2] c.p.a.dao.DoctorScheduleDAOImpl          : saveDoctorSchedule()<--DoctorScheduleDAOImpl class executed
+2021-08-04 11:04:50.332  INFO 25724 --- [http-nio-8080-exec-2] c.p.a.service.DoctorScheduleServiceImpl  : saveDoctorSchedule() executed
+2021-08-04 11:04:50.332 DEBUG 25724 --- [http-nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 11:04:50.439  INFO 25724 --- [http-nio-8080-exec-2] c.p.a.controller.AppointmentController   : saveAppointment<--AppointmentController class executed
+2021-08-04 11:04:50.443 DEBUG 25724 --- [http-nio-8080-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : After request [POST /appointment/add, payload={
+  "patientAppointment":{
+	"pid":147,
+	"pname":"P pal"
+  },
+    "doctorSchedule":{
+		"did":"143",
+		"dname":"S Pal"
+		
+  }
+
+}	]
+2021-08-04 11:06:37.650 DEBUG 25724 --- [http-nio-8080-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : Before request [DELETE /appointment/delete/149]
+2021-08-04 11:06:37.651 DEBUG 25724 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-08-04 11:06:37.652 DEBUG 25724 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 11:06:37.697 DEBUG 25724 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 11:06:37.774 DEBUG 25724 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : begin
+2021-08-04 11:06:37.805  INFO 25724 --- [http-nio-8080-exec-4] c.p.a.dao.DoctorScheduleDAOImpl          : deleteDoctorScheduleById()<--DoctorScheduleDAOImpl class executed
+2021-08-04 11:06:37.805  INFO 25724 --- [http-nio-8080-exec-4] c.p.a.service.DoctorScheduleServiceImpl  : deleteDoctorScheduleById() executed
+2021-08-04 11:06:37.805 DEBUG 25724 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : committing
+2021-08-04 11:06:37.886 DEBUG 25724 --- [http-nio-8080-exec-4] o.s.w.f.CommonsRequestLoggingFilter      : After request [DELETE /appointment/delete/149]
+2021-08-04 11:07:34.211 DEBUG 25724 --- [http-nio-8080-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [DELETE /gfkhjvg]
+2021-08-04 11:07:34.215  WARN 25724 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for DELETE /gfkhjvg
+2021-08-04 11:07:34.217 DEBUG 25724 --- [http-nio-8080-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [DELETE /gfkhjvg]
+2021-08-04 11:13:01.310  INFO 25660 --- [main] sactionManagementPlasmItApplicationTests : Starting AppointmentWithTransactionManagementPlasmItApplicationTests using Java 13.0.2 on LAPTOP-GLU60OEK with PID 25660 (started by Shayan in C:\Users\Shayan\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\AppointmentWithTransactionManagementPlasmIT)
+2021-08-04 11:13:01.314  INFO 25660 --- [main] sactionManagementPlasmItApplicationTests : No active profile set, falling back to default profiles: default
+2021-08-04 11:13:02.281  INFO 25660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-04 11:13:02.284  INFO 25660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-08-04 11:13:02.314  INFO 25660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 JDBC repository interfaces.
+2021-08-04 11:13:02.325  INFO 25660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-04 11:13:02.327  INFO 25660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-04 11:13:02.344  INFO 25660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2021-08-04 11:13:03.224  INFO 25660 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-04 11:13:03.299  INFO 25660 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-04 11:13:03.457  INFO 25660 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-04 11:13:03.839  INFO 25660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-04 11:13:05.185  INFO 25660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-04 11:13:05.201  INFO 25660 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-08-04 11:13:06.197  INFO 25660 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-04 11:13:06.206  INFO 25660 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 11:13:06.699  WARN 25660 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-04 11:13:07.581  INFO 25660 --- [main] sactionManagementPlasmItApplicationTests : Started AppointmentWithTransactionManagementPlasmItApplicationTests in 6.793 seconds (JVM running for 9.537)
+2021-08-04 11:13:07.990  INFO 25660 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 11:13:07.994  INFO 25660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-04 11:13:08.049  INFO 25660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-04 11:37:46.125  INFO 6132 --- [main] sactionManagementPlasmItApplicationTests : Starting AppointmentWithTransactionManagementPlasmItApplicationTests using Java 13.0.2 on LAPTOP-GLU60OEK with PID 6132 (started by Shayan in C:\Users\Shayan\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\AppointmentWithTransactionManagementPlasmIT)
+2021-08-04 11:37:46.128  INFO 6132 --- [main] sactionManagementPlasmItApplicationTests : No active profile set, falling back to default profiles: default
+2021-08-04 11:37:46.995  INFO 6132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-04 11:37:46.997  INFO 6132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-08-04 11:37:47.021  INFO 6132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JDBC repository interfaces.
+2021-08-04 11:37:47.033  INFO 6132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-04 11:37:47.035  INFO 6132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-04 11:37:47.052  INFO 6132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2021-08-04 11:37:47.709  INFO 6132 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-04 11:37:47.775  INFO 6132 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-04 11:37:47.917  INFO 6132 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-04 11:37:48.274  INFO 6132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-04 11:37:48.713  INFO 6132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-04 11:37:48.732  INFO 6132 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-08-04 11:37:49.590  INFO 6132 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-04 11:37:49.603  INFO 6132 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 11:37:50.091  WARN 6132 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-04 11:37:50.904  INFO 6132 --- [main] sactionManagementPlasmItApplicationTests : Started AppointmentWithTransactionManagementPlasmItApplicationTests in 5.121 seconds (JVM running for 6.117)
+2021-08-04 11:37:51.188  INFO 6132 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-04 11:37:51.192  INFO 6132 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-04 11:37:51.220  INFO 6132 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

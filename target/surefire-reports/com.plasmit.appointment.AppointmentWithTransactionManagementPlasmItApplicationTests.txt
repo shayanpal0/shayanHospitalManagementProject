@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.plasmit.appointment.AppointmentWithTransactionManagementPlasmItApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.797 s - in com.plasmit.appointment.AppointmentWithTransactionManagementPlasmItApplicationTests
